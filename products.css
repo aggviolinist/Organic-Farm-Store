@@ -1,0 +1,115 @@
+/*margin- creates space outside the element */
+/* padding - creates space inside the element */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color:  #ffe3b0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav .search-bar {
+   /* display: flex; */
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav .search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-category {
+    display: flex; /*container with the products */
+   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*defines the grid columns */
+  /*  gap: 20px; /*adds horizontal spacing btn products */
+    overflow-x: auto; /*horizontal scrolling */
+    white-space: nowrap;
+    flex-shrink: 2;
+    padding: 5px;
+}
+
+.product-item {
+    border: 0px solid #ccc;
+    border-radius: 1px;
+    padding: 40px;
+    margin-left: 20px; 
+    transition: transform 0.2s;
+    flex: 0 0 auto;
+    width: 205px; /*width of each fruit */
+    margin-bottom: 50px;
+    max-width: 205px; /*max width of each item */
+}
+.product-item:last-child{
+    margin-right: 0;
+}
+
+.product-item img {
+    max-width: 130%;
+    height: 160px;
+    object-fit: contain; /*Ensures that the image fits exactly no bigger side */
+}
+.product-category h2 {
+    text-align: center; /* Center the text within the heading */
+    margin-bottom: 200px; /* Add some spacing below the heading */
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    padding: 40px;
+}
+
+/* Hover effect to pop out the picture */
+.product-item:hover {
+    transform: scale(1.05);
+}
+.cart:link{
+    background-color:black;
+}
+.cart:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.cart:hover, .cart:active {
+    background-color: red;
+  }

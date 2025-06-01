@@ -1,0 +1,87 @@
+/* Reset some default styles */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-image: url('images/farm6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Basic styling for the navigation bar */
+header {
+    background-color: #4CAF50;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav .search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+/* Basic styling for the hero section */
+.frame {
+   
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    background-position: center center; 
+}
+
+.frame h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Basic styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
